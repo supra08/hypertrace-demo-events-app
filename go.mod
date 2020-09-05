@@ -1,4 +1,4 @@
-module github.com/supra08/hypertrace-demo-events-app
+module github.com/hypertrace/demo-events-app
 
 go 1.14
 
