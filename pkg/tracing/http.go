@@ -60,3 +60,32 @@ func (c *HTTPClient) GetJSON(ctx context.Context, endpoint string, url string, o
 	decoder := json.NewDecoder(res.Body)
 	return decoder.Decode(out)
 }
+
+// PostJSON executes HTTP POST against specified url and tried to parse
+// the response into out object.
+func (c *HTTPClient) PostJSON(ctx context.Context, endpoint string, url string, out interface{}) error {
+	req, err := http.NewRequest("POST", url, nil)
+	if err != nil {
+		return err
+	}
+	req = req.WithContext(ctx)
+	req, ht := nethttp.TraceRequest(c.Tracer, req, nethttp.OperationName("HTTP POST: "+endpoint))
+	defer ht.Finish()
+
+	res, err := c.Client.Do(req)
+	if err != nil {
+		return err
+	}
+
+	defer res.Body.Close()
+
+	if res.StatusCode >= 400 {
+		body, err := ioutil.ReadAll(res.Body)
+		if err != nil {
+			return err
+		}
+		return errors.New(string(body))
+	}
+	decoder := json.NewDecoder(res.Body)
+	return decoder.Decode(out)
+}
