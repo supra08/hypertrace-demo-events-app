@@ -1,0 +1,9 @@
+{
+    "BACKEND_URL": "http://0.0.0.0:8080/api/v1",
+    "FEED_LABEL": "Event",
+    "APP_TITLE": "Your online events catalogue",
+    "COMMENT_LABEL": "Comments",
+    "COMMENT_BUTTON_LABEL": "Comment",
+    "COMMENT_UNAVAILABLE_LABEL": "No comments on this event yet.",
+    "FEED_UNAVAILABLE_LABEL": "No events are available yet."
+}
