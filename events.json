@@ -1,0 +1,44 @@
+{
+    "events" : [
+        {
+            "id":          "123",
+            "name":        "Delmonico's Bookstore Inauguration",
+            "description": "Join the celebration for inaugurating one of the biggest bookstores of the city."
+        },
+        {
+            "id":          "567",
+            "name":        "Local Dev Group Meetup",
+            "description": "Meet and connect with the best developers out there."
+        },
+        {
+            "id":          "392",
+            "name":        "Prof. Gillian's Birthday Party.",
+            "description": "Join us in celebrating Professor Gillian's birthday party at 24 Park Avenue."
+        },
+        {
+            "id":          "731",
+            "name":        "Awesone Japanese Desserts",
+            "description": "Japanese Food Hub is organizing a food fest, showcasing the best of the desserts. Come join them."
+        }
+    ],
+    "comments": [
+        {
+            "id":        "123",
+            "commenter": "Marshal",
+            "content":   "This event is going to be awesome, looking forward to it!",
+            "event_id":   "731"
+        },
+        {
+            "id":        "345",
+            "commenter": "Janice",
+            "content":   "Can't wait to meet professon gillian. Can't believe he is going to be 60 this year!",
+            "event_id":   "392"
+        },
+        {
+            "id":        "567",
+            "commenter": "Ileana",
+            "content":   "Was looking forward to this bookstore since a long time!",
+            "event_id":   "123"
+        }
+    ]
+}
