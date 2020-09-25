@@ -1,9 +1,11 @@
-package main
+package cmd
 
 import (
 	"math/rand"
+	"os"
 	"time"
 
+	"github.com/spf13/cobra"
 	"github.com/uber/jaeger-lib/metrics"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -14,6 +16,8 @@ var (
 	metricsFactory metrics.Factory
 	host           string = "0.0.0.0"
 	backendPort    int    = 8080
+	frontendPort   int    = 3000
+	basepath       string = "/"
 )
 
 func logError(logger *zap.Logger, err error) error {
@@ -33,9 +37,16 @@ func initServerConfig() *zap.Logger {
 	return zapLogger
 }
 
-func main() {
-	zapLogger := initServerConfig()
-	backend := setupBackendServer(zapLogger, host, backendPort)
+// RootCmd represents the base command when called without any subcommands
+var RootCmd = &cobra.Command{
+	Use:   "events-app",
+	Short: "Events-app - A tracing demo application",
+	Long:  `Events-app - A tracing demo application`,
+}
 
-	go logError(zapLogger, backend.Run())
+func Execute() {
+	if err := RootCmd.Execute(); err != nil {
+		logger.Fatal("Some error occured, aborting...", zap.Error(err))
+		os.Exit(-1)
+	}
 }
