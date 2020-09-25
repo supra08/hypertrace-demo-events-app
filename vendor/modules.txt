@@ -1,40 +1,22 @@
 # github.com/VividCortex/gohistogram v1.0.0
 github.com/VividCortex/gohistogram
-# github.com/gin-contrib/sse v0.1.0
-github.com/gin-contrib/sse
 # github.com/gin-gonic/gin v1.6.3
 ## explicit
-github.com/gin-gonic/gin
-github.com/gin-gonic/gin/binding
-github.com/gin-gonic/gin/internal/bytesconv
-github.com/gin-gonic/gin/internal/json
-github.com/gin-gonic/gin/render
 # github.com/go-kit/kit v0.10.0
 github.com/go-kit/kit/metrics
 github.com/go-kit/kit/metrics/expvar
 github.com/go-kit/kit/metrics/generic
 github.com/go-kit/kit/metrics/internal/lv
-# github.com/go-playground/locales v0.13.0
-github.com/go-playground/locales
-github.com/go-playground/locales/currency
-# github.com/go-playground/universal-translator v0.17.0
-github.com/go-playground/universal-translator
-# github.com/go-playground/validator/v10 v10.2.0
-github.com/go-playground/validator/v10
-# github.com/golang/protobuf v1.3.4
-github.com/golang/protobuf/proto
+# github.com/google/uuid v1.1.2
+## explicit
+github.com/google/uuid
+# github.com/inconshreveable/mousetrap v1.0.0
+github.com/inconshreveable/mousetrap
 # github.com/jaegertracing/jaeger v1.19.2
 ## explicit
-# github.com/json-iterator/go v1.1.9
-github.com/json-iterator/go
-# github.com/leodido/go-urn v1.2.0
-github.com/leodido/go-urn
-# github.com/mattn/go-isatty v0.0.12
-github.com/mattn/go-isatty
-# github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd
-github.com/modern-go/concurrent
-# github.com/modern-go/reflect2 v1.0.1
-github.com/modern-go/reflect2
+# github.com/mjibson/esc v0.2.0
+## explicit
+github.com/mjibson/esc/embed
 # github.com/opentracing-contrib/go-stdlib v1.0.0
 ## explicit
 github.com/opentracing-contrib/go-stdlib/nethttp
@@ -45,6 +27,11 @@ github.com/opentracing/opentracing-go/ext
 github.com/opentracing/opentracing-go/log
 # github.com/pkg/errors v0.9.1
 github.com/pkg/errors
+# github.com/spf13/cobra v0.0.3
+## explicit
+github.com/spf13/cobra
+# github.com/spf13/pflag v1.0.5
+github.com/spf13/pflag
 # github.com/uber/jaeger-client-go v2.25.0+incompatible
 ## explicit
 github.com/uber/jaeger-client-go
@@ -72,8 +59,6 @@ github.com/uber/jaeger-lib/metrics/adapters
 github.com/uber/jaeger-lib/metrics/expvar
 github.com/uber/jaeger-lib/metrics/go-kit
 github.com/uber/jaeger-lib/metrics/go-kit/expvar
-# github.com/ugorji/go/codec v1.1.7
-github.com/ugorji/go/codec
 # go.uber.org/atomic v1.6.0
 go.uber.org/atomic
 # go.uber.org/multierr v1.5.0
@@ -86,8 +71,21 @@ go.uber.org/zap/internal/bufferpool
 go.uber.org/zap/internal/color
 go.uber.org/zap/internal/exit
 go.uber.org/zap/zapcore
-# golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae
-golang.org/x/sys/internal/unsafeheader
-golang.org/x/sys/unix
-# gopkg.in/yaml.v2 v2.3.0
-gopkg.in/yaml.v2
+# golang.org/x/mod v0.3.0
+golang.org/x/mod/module
+golang.org/x/mod/semver
+# golang.org/x/tools v0.0.0-20200924224222-8d73f17870ce
+## explicit
+golang.org/x/tools/go/ast/astutil
+golang.org/x/tools/imports
+golang.org/x/tools/internal/event
+golang.org/x/tools/internal/event/core
+golang.org/x/tools/internal/event/keys
+golang.org/x/tools/internal/event/label
+golang.org/x/tools/internal/fastwalk
+golang.org/x/tools/internal/gocommand
+golang.org/x/tools/internal/gopathwalk
+golang.org/x/tools/internal/imports
+# golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
+golang.org/x/xerrors
+golang.org/x/xerrors/internal
